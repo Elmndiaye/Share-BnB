@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Share BNB User Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/public/css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/stylesheet.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
 
@@ -28,12 +28,13 @@
             <div class="card">
 
                 <div class="card-header">
-                        What kind of space do you want to rent?
+                  Register Your Asset
                 </div>  
 
                 <div class="card-body">
+                    <div class="">What kind of space do you want to rent?</div>
                     <form>
-                        <div class="text-left">
+                        <div class="text-left mt-2">
                             <label for="register_type_of_asset">Asset</label>
                             <select class="form-control" id="register_type_of_asset">
                                 <option>Parking</option>
@@ -41,26 +42,74 @@
                                 <option>Hamsters</option>
                             </select>
                         </div>
+                        <hr>
 
-                        <div class="col text-left">
-                            <label for="register_use_of_asset">Type</label>
-                            <select class="form-control" id="register_use_of_asset">
-                                <option>Automobile</option>
-                                <option>Recreation Vehicle</option>
-                                <option>Boat</option>
-                            </select>
-                        </div>
-                        <span>
-                                <label for="register_size_first">Size</label>
-                                <input type="text" class="form-control" id="city_search" placeholder="Berkeley, CA">
+                        <div class="">How can others utilize your space?</div>
+                        <div class="row mt-2">
+                           <div class="col-md-6">
+                                <label for="register_use_of_asset">Type</label>
+                                <select class="form-control" id="register_use_of_asset">
+                                    <option>Automobile</option>
+                                    <option>Recreation Vehicle</option>
+                                    <option>Boat</option>
                                 </select>
-                        </span>
-
-
-                        <div class="form-group text-left">
-                            <label for="city_search">Where?</label>
-                            <input type="text" class="form-control" id="city_search" placeholder="Berkeley, CA">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="register_size_first">Length</label>
+                                <input type="text" class="form-control" id="register_size_first" placeholder="# in feet"> 
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="register_size_second">Width</label>
+                                <input type="text" class="form-control" id="register_size_second" placeholder="# in feet">
+                                </select>
+                            </div>
                         </div>
+                        <hr>
+
+                        <div class="">Are there any time restrictions?</div>
+                        <div class="row  mt-2">
+                            <div class="col form-group text-left">
+                                <label for="register_time_first">Available From:</label>
+                                <input type="text" class="form-control" id="register_time_first" placeholder="9:00 AM">
+                            </div>
+                            <div class="col form-group text-left">
+                                    <label for="register_time_second">To:</label>
+                                    <input type="text" class="form-control" id="register_time_second" placeholder="8:00 PM">
+                                </div>
+                        </div>
+                        <hr>
+
+                        <div class="">Where is your space located?</div>
+
+                        <div class="form-row mt-2">
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="register_asset_country" placeholder="Country">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="register_asset_street" placeholder="99 Hamster St">
+                            </div>
+                   
+                            <div class="col-8 mt-2">
+                                <input type="text" class="form-control" id="register_asset_city" placeholder="City">
+                            </div>
+                            <div class="col mt-2">
+                                <input type="text" class="form-control" id="register_asset_state" placeholder="State">
+                            </div>
+                            <div class="col mt-2">
+                                <input type="text" class="form-control" id="register_asset_zip" placeholder="Zip">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="">Description of your asset</div>
+                        <div class="form-group mt-2">
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="register_asset_description" rows="8" placeholder="Gravel driveway, slightly sloped"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submission_register_host" class="btn btn-primary mt-3 float-right pl-5 pr-5">Next</button>
 
                     </form>
                 </div>
