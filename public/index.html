@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Share BNB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/public/css/stylesheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        
+        <a class="navbar-brand" href="/index">ShareBNB</a>
+
+        <form class="form-inline">
+            <a href="#"><button class="btn btn-outline-primary mr-3" type="button">Become a Host</button></a>
+            <a href="/user_registration"><button class="btn btn-outline-primary mr-3" type="button">Sign Up</button></a>
+            <a href="#"><button class="btn btn-outline-primary mr-3" type="button">Sign In</button></a>
+        </form>
+    </nav>
+
+<div class="container">
+    <div class="row justify-content-end mt-5">
+        <div class="col-md-6 mt-5">
+            <div class="card text-center">
+                <div class="card-header">
+                Find Places on ShareBNB
+                </div>
+                
+                <div class="card-body">
+                    <form>
+                        <div class="form-group text-left">
+                            <label for="city_search">Where?</label>
+                            <input type="text" class="form-control" id="city_search" placeholder="Berkeley, CA">
+                        </div>
+
+                        <div class="text-left">
+                            <label for="type_of_asset">What?</label>
+                            <select class="form-control" id=" type_of_asset">
+                                <option>Parking</option>
+                                <option>Space</option>
+                                <option>Hamsters</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row text-left mt-2">
+                            <div class="col">
+                                <label for="check_in">Check-in</label>
+                                <input type="text" class="form-control" id="check_in" placeholder="06/24/2019">
+                            </div>
+                            <div class="col">
+                                <label for="check_out">Check-out</label>
+                                <input type="text" class="form-control" id="check_out" placeholder="06/30/2018">
+                            </div>
+                        </div>
+                        <button type="submission_index" class="btn btn-primary mt-3 float-right pl-5 pr-5">Search</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- End of the line -->
+</div>
+
+<!-- Scripts begin here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
